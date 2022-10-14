@@ -1,0 +1,87 @@
+/*General use*/
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+hr {
+	background-color: white;
+	border: none;
+	height: 2px;
+}
+
+.parallax {
+	background-image: url(assets/background.jpg);
+	/*Creating the parallax scrolling effect*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.layer {
+	/*Creating the cover for the parallax background*/
+	background: rgba(0, 20, 34, 0.8);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.title {
+	font-family: "Oxygen";
+	display: block;
+	letter-spacing: 5px;
+	border: 2px solid white;
+	font-size: 30px;
+	padding: 10px;
+	color: white;
+	width: 450px;
+}
+
+.text1 {
+	color: white;
+	font-size: 20px;
+}
+
+.text2 {
+	color: #FFBF00;
+	font-family: 'Niconne', cursive;
+	font-size: 50px;
+}
+
+
+/*Games section*/
+.gamedetail {
+	position: relative;
+	width: 100%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #000000;
+	padding: 3%;
+}
+
+.gamedetail:hover .overlay {
+	opacity: 0.8;
+}
+
+.games {
+	display: block;
+	width: 100%;
+	height: auto;
+	border: 3px solid #ffffff;
+}
+
